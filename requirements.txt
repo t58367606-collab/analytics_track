@@ -27,8 +27,7 @@ google-api-python-client
 google-auth                  
 google-auth-httplib2         
 google-auth-oauthlib         
-google-genai                 
-google-generativeai          
+google-genai                         
 googleapis-common-protos     
 grpcio                       
 grpcio-status                
@@ -106,3 +105,4 @@ websockets
 Werkzeug                     
 zstandard       
 psycopg2-binary            
+
