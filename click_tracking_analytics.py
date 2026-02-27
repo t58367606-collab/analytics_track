@@ -48,7 +48,7 @@ app.add_middleware(
 # ======================================================
 FINAL_DESTINATION = "https://nonai.life/"
 PORT = 8000
-DATABASE_URL = "postgresql://postgres:spcuRPdwqcUomUeBDlJaDpaeFzUdwotE@switchback.proxy.rlwy.net:44426/railway"
+DATABASE_URL = "postgresql://test_analytics_user:IDu9oj1HeWvqewu5EV2T5TJxmnsNLnHL@dpg-d6gn00lm5p6s73b66lt0-a.oregon-postgres.render.com/test_analytics"
 if not DATABASE_URL:
     raise ValueError("DATABASE_URL environment variable not set!")
 
@@ -856,4 +856,5 @@ async def health():
 
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(app, host="0.0.0.0", port=PORT)
