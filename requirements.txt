@@ -105,4 +105,4 @@ watchdog
 websockets                   
 Werkzeug                     
 zstandard       
-psycopg2            
+psycopg2-binary            
