@@ -48,11 +48,11 @@ app.add_middleware(
 # ======================================================
 FINAL_DESTINATION = "https://nonai.life/"
 PORT = 8000
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = "postgresql://test_analytics_user:IDu9oj1HeWvqewu5EV2T5TJxmnsNLnHL@dpg-d6gn00lm5p6s73b66lt0-a.oregon-postgres.render.com/test_analytics"
 if not DATABASE_URL:
     raise ValueError("DATABASE_URL environment variable not set!")
 
-PUBLIC_URL = os.getenv("PUBLIC_URL", "http://44.193.35.107:8000")
+PUBLIC_URL = os.getenv("PUBLIC_URL")
 
 BOT_USER_AGENTS = [
     'facebookexternalhit', 'Twitterbot', 'LinkedInBot', 'WhatsApp',
